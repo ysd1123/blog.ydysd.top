@@ -235,7 +235,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 #### 创建工作区并配置编译和调试
 
-在家目录下创建你喜欢的目录，例如 `/projects/acm_practise`。执行 `cd ~/projects/helloworld`，在通过 `code .` 启动 VS Code 在该文件夹下的新窗口。
+在家目录下创建你喜欢的目录，例如 `/projects/acm_practise`。执行 `cd ~/projects/helloworld`，再通过 `code .` 启动 VS Code 在该文件夹下的新窗口。
 
 新建一个 C++ 文件`main.cpp`，粘贴以下代码并保存：
 
