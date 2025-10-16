@@ -2,4 +2,8 @@
 lang: zh
 ---
 
-Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排。本主题以 [活版印字](https://astro-theme-typography.vercel.app/) 为设计灵感，通过建立全新的视觉规范，对所有页面进行重新编排，打造纸质书页般的阅读体验，再现版式之美。所见皆为细节，方寸尽显优雅。
+> 一位很普通的交大本科生。
+
+这是 David Ye 的个人技术博客，也许还也会有一些生活随笔。
+
+本站由 [Astro](https://astro.build/) 主题 [Retypeset](https://github.com/radishzzz/astro-theme-retypeset) 和 [GitHub Pages](https://pages.github.com/) 强力驱动。
