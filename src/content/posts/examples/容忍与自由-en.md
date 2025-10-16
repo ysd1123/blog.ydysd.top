@@ -6,6 +6,7 @@ tags:
   - Modern Literature
 lang: en
 abbrlink: tolerance-freedom
+draft: true
 ---
 
 Seventeen or eighteen years ago, I met for the last time the historian George Lincoln Burr from my alma mater, Cornell University. We talked about how the British historian Lord Acton planned to write a history of liberty, but died before he finished it. Mr. Burr talked a lot that day, and there was one sentence I still remember. He said, "The older I get, the more I feel that tolerance is more important than freedom."
