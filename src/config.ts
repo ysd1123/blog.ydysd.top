@@ -15,6 +15,9 @@ export const themeConfig: ThemeConfig = {
     author: 'David Ye',
     // site url
     url: 'https://ydysd.top',
+    // base path
+    // root directory for all pages and assets
+    base: '/', // e.g., '/blog', '/docs'
     // favicon url
     // recommended formats: svg, png or ico
     favicon: '/icons/favicon.ico', // or https://example.com/favicon.svg
