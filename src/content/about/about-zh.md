@@ -12,6 +12,6 @@ lang: zh
 
 ## 版权声明
 
-<img src=https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png width=100/>
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="CC BY-NC-SA 4.0 Logo" width=100/>
 
 除本身有特殊注明的作品（“作品”包括但不限于文本、图片、代码等形式）外，[本站](https://blog.ydysd.top/)中出现的所有作品内容采用 [CC BY-NC-SA 4.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。要查看此许可证的副本，请访问 [creativecommons.org](https://creativecommons.org/licenses/by-nc-sa/4.0/)。
