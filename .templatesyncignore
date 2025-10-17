@@ -1,1 +1,10 @@
-
+.templatesyncignore
+public/icons/**
+public/BingSiteAuth.xml
+public/CNAME
+public/baidu_verify_codeva-BHuUfOmyBV.html
+.github/workflows/**
+src/content/**
+astro.config.ts
+src/config.ts
+src/i18n/ui.ts
