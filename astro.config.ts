@@ -27,7 +27,7 @@ const imageConfig = imageHostURL
 
 export default defineConfig({
   site: 'https://blog.ydysd.top',
-  base: '',
+  base: '/',
   trailingSlash: 'always', // Not recommended to change
   prefetch: {
     prefetchAll: true,
