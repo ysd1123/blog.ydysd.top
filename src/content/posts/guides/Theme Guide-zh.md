@@ -8,7 +8,6 @@ tags:
 pin: 99
 lang: zh
 abbrlink: theme-guide
-draft: true
 ---
 
 Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排。本文为 Retypeset 主题上手指南，主要介绍如何修改主题配置与创建新文章，来帮助你快速搭建个人博客。
@@ -33,6 +32,9 @@ site: {
   author: 'radishzz'
   // 站点地址
   url: 'https://retypeset.radishzz.cc'
+  // 基础路径
+  // 所有页面和资产的根目录
+  base: '/' // 例如 '/blog', '/docs'
   // 站点图标
   // 推荐格式：svg, png, ico
   favicon: '/icons/favicon.svg' // 或 https://example.com/favicon.svg

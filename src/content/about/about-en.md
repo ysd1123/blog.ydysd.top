@@ -2,8 +2,4 @@
 lang: en
 ---
 
-> A normal undergraduate student at ACEM, Shanghai Jiao Tong University.
-
-This is David Ye's personal blog, and there may also be some essays about daily life.
-
-Powered by the [Astro](https://astro.build/) theme [Retypeset](https://github.com/radishzzz/astro-theme-retypeset) and [GitHub Pages](https://pages.github.com/).
+Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. Inspired by [Typography](https://astro-theme-typography.vercel.app/), Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.

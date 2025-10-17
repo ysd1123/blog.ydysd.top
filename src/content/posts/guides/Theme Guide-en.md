@@ -8,7 +8,6 @@ tags:
 pin: 99
 lang: en
 abbrlink: theme-guide
-draft: true
 ---
 
 Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. This guide introduces how to modify theme configuration and create new posts, helping you quickly set up your personal blog.
@@ -33,6 +32,9 @@ site: {
   author: 'radishzz'
   // site url
   url: 'https://retypeset.radishzz.cc'
+  // base path
+  // root directory for all pages and assets
+  base: '/' // e.g., '/blog', '/docs'
   // favicon url
   // recommended formats: svg, png or ico
   favicon: '/icons/favicon.svg' // or https://example.com/favicon.svg

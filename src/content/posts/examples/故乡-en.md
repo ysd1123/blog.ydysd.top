@@ -6,7 +6,6 @@ tags:
   - Modern Literature
 lang: en
 abbrlink: my-native-heath
-draft: true
 ---
 
 ![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/03.webp)

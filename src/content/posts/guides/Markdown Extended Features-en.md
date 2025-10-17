@@ -6,7 +6,6 @@ tags:
 toc: false
 lang: en
 abbrlink: markdown-extended-features
-draft: true
 ---
 
 Here are some extended Markdown features supported by Retypeset, including syntax examples and their stylistic effects.
@@ -127,7 +126,7 @@ To create image galleries, use the container directive `:::gallery`. Scroll hori
 
 ## GitHub Repositories
 
-To create GitHub repository cards, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
+To create GitHub repository cards, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API when the page loads.
 
 ### Syntax
 
@@ -170,3 +169,29 @@ To embed tweet cards, use the leaf directive `::tweet{url="tweetUrl"}`.
 ### Output
 
 ::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
+
+## Mermaid Diagrams
+
+To create Mermaid diagrams, wrap Mermaid syntax in code blocks and specify the language type as `mermaid`.
+
+### Syntax
+
+``````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+``````
+
+### Output
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```

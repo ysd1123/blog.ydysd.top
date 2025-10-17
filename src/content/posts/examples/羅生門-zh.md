@@ -6,7 +6,6 @@ tags:
   - 近代文学
 lang: zh
 abbrlink: rashomon
-draft: true
 ---
 
 ![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)

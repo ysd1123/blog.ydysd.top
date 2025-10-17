@@ -25,8 +25,8 @@ export const { getStaticPaths, GET } = OGImageRoute({
     title: page.title,
     description: page.description,
     logo: {
-      path: './public/icons/blog.ydysd.top_logo.png', // Required local path and PNG format
-      size: [256],
+      path: './public/icons/og-logo.png', // Required local path and PNG format
+      size: [250],
     },
     border: {
       color: [242, 241, 245],
