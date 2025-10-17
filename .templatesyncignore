@@ -1,8 +1,1 @@
-astro.config.ts
-src/config.ts
-src/utils/description.ts
-src/i18n/ui.ts
-src/pages/og/\[...image\].ts
-src/content/**
-public/icons/**
-.github/**
+
