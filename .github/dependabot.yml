@@ -3,21 +3,21 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: daily
-    open-pull-requests-limit: 3
+      interval: monthly
+      day: tuesday
+      time: "02:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
     groups:
-      patch-updates:
-        patterns:
-          - '*'
-        update-types:
-          - patch
-      minor-updates:
+      all-non-major-updates:
         patterns:
           - '*'
         update-types:
           - minor
+          - patch
     ignore:
       - dependency-name: '*'
-        update-types: ['version-update:semver-major']
+        update-types:
+          - 'version-update:semver-major'
