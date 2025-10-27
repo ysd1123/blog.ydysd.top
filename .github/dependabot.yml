@@ -3,10 +3,10 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
+      day: tuesday
       time: "02:00"
-      timezone: "UTC"
+      timezone: "Asia/Shanghai"
     open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
