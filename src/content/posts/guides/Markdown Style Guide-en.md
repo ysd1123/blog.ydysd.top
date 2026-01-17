@@ -8,7 +8,10 @@ pin: 98
 toc: false
 lang: en
 abbrlink: markdown-style-guide
+<<<<<<< HEAD
 draft: true
+=======
+>>>>>>> upstream/master
 ---
 
 Here are some basic Markdown syntax examples and their stylistic effects in Retypeset.

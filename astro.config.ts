@@ -26,8 +26,8 @@ const imageConfig = imageHostURL
   : {}
 
 export default defineConfig({
-  site: 'https://blog.ydysd.top',
-  base: '/',
+  site,
+  base,
   trailingSlash: 'always', // Not recommended to change
   prefetch: {
     prefetchAll: true,
@@ -37,7 +37,7 @@ export default defineConfig({
   i18n: {
     locales: Object.entries(langMap).map(([path, codes]) => ({
       path,
-      codes: codes as [string, ...string[]],
+      codes: [...codes] as [string, ...string[]],
     })),
     defaultLocale,
   },

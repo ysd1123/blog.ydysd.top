@@ -1,6 +1,16 @@
-export const languages = { zh: '简体中文', en: 'English' };
-export const defaultLang = 'zh';
-export const ui = {
+import type { Language } from '@/i18n/config'
+
+interface Translation {
+  title: string
+  subtitle: string
+  description: string
+  posts: string
+  tags: string
+  about: string
+  toc: string
+}
+
+export const ui: Record<Language, Translation> = {
   'en': {
     title: 'CodeRiff',
     subtitle: "@Coconut Jelly's Personal Blog",
