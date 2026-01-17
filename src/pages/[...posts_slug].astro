@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
+import type { Language } from '@/i18n/config'
 import { getCollection, render } from 'astro:content'
 import Comment from '@/components/Comment/Index.astro'
 import PostDate from '@/components/PostDate.astro'
@@ -28,18 +29,18 @@ export async function getStaticPaths() {
     const lang = post.data.lang
 
     if (!map.has(slug)) {
-      map.set(slug, new Set(lang ? [lang] : allLocales))
+      map.set(slug, new Set<Language>(lang ? [lang as Language] : allLocales))
     }
     else if (lang) {
-      map.get(slug)?.add(lang)
+      map.get(slug)?.add(lang as Language)
     }
 
     return map
-  }, new Map<string, Set<string>>())
+  }, new Map<string, Set<Language>>())
 
   // Convert Map<slug, Set<langs>> to Record<slug, langs[]> structure
   // Sort languages according to the order defined in allLocales
-  const slugToLangs = Object.fromEntries(
+  const slugToLangs: Record<string, Language[]> = Object.fromEntries(
     Array.from(slugToLangsMap.entries()).map(([slug, langs]) => [
       slug,
       [...langs].sort((a, b) => allLocales.indexOf(a) - allLocales.indexOf(b)),
@@ -49,7 +50,7 @@ export async function getStaticPaths() {
 
   type PathItem = {
     params: { posts_slug: string }
-    props: { post: any, lang: string, supportedLangs: string[] }
+    props: { post: any, lang: Language, supportedLangs: Language[] }
   }
 
   const paths: PathItem[] = []
@@ -73,7 +74,7 @@ export async function getStaticPaths() {
   })
 
   // More locales
-  moreLocales.forEach((lang: string) => {
+  moreLocales.forEach((lang: Language) => {
     posts.forEach((post: CollectionEntry<'posts'>) => {
       // Process posts with matching language or no language specified
       if ((import.meta.env.DEV || !post.data.draft)
@@ -94,7 +95,7 @@ export async function getStaticPaths() {
   return paths
 }
 
-const { post, lang, supportedLangs } = Astro.props
+const { post, lang, supportedLangs } = Astro.props as { post: any, lang: Language, supportedLangs: Language[] }
 const slug = post.data.abbrlink || post.id
 const description = getPostDescription(post, 'meta')
 const { Content, headings, remarkPluginFrontmatter } = await render(post)

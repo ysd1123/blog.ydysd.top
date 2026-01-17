@@ -1,4 +1,5 @@
 ---
+import type { Language } from '@/i18n/config'
 import PostList from '@/components/PostList.astro'
 import TagList from '@/components/TagList.astro'
 import { defaultLocale, moreLocales } from '@/config'
@@ -8,7 +9,7 @@ import { getAllTags, getPostsByTag, getTagSupportedLangs } from '@/utils/content
 export async function getStaticPaths() {
   type PathItem = {
     params: { tags_tag: string }
-    props: { tag: string, lang: string }
+    props: { tag: string, lang: Language }
   }
 
   const paths: PathItem[] = []
@@ -23,7 +24,7 @@ export async function getStaticPaths() {
   })
 
   // More locales
-  for (const lang of moreLocales) {
+  for (const lang of moreLocales as Language[]) {
     const langTags = await getAllTags(lang)
     langTags.forEach((tag: string) => {
       paths.push({
@@ -36,7 +37,7 @@ export async function getStaticPaths() {
   return paths
 }
 
-const { tag, lang } = Astro.props
+const { tag, lang } = Astro.props as { tag: string, lang: Language }
 const posts = await getPostsByTag(tag, lang)
 const allTags = await getAllTags(lang)
 const supportedLangs = await getTagSupportedLangs(tag)
