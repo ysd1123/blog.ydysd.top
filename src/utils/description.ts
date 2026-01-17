@@ -24,6 +24,7 @@ const excerptLengths: Record<ExcerptScene, { cjk: number, other: number }> = {
     other: 140,
   },
 }
+
 const htmlEntityMap: Record<string, string> = {
   '&lt;': '<',
   '&gt;': '>',
