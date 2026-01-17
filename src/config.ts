@@ -10,7 +10,7 @@ export const themeConfig: ThemeConfig = {
     // site description
     description: 'David Ye 的个人技术博客，也许也会有一些生活随笔。本站由 Astro 主题 Retypeset 和 GitHub Pages 强力驱动。',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
-    i18nTitle: true, // true, false
+    i18nTitle: true, // true | false
     // author name
     author: 'David Ye',
     // site url
@@ -27,41 +27,29 @@ export const themeConfig: ThemeConfig = {
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   color: {
     // default theme mode
-    mode: 'auto', // light, dark, auto
-    // light: {
-    //   // primary color
-    //   // used for title, hover, etc
-    //   // oklch color picker: https://oklch.com/
-    //   primary: 'oklch(25% 0.005 298)',
-    //   // secondary color
-    //   // used for post text
-    //   secondary: 'oklch(40% 0.005 298)',
-    //   // background color
-    //   background: 'oklch(96% 0.005 298)',
-    //   // highlight color
-    //   // used for navbar, selected text, etc
-    //   highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
-    // },
-    // dark: {
-    //   // primary color
-    //   primary: 'oklch(92% 0.005 298)',
-    //   // secondary color
-    //   secondary: 'oklch(77% 0.005 298)',
-    //   // background color
-    //   background: 'oklch(22% 0.005 298)',
-    //   // highlight color
-    //   highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
-    // },
+    mode: 'auto', // light | dark | auto
     light: {
+      // primary color
+      // used for title, hover, etc
+      // oklch color picker: https://oklch.com/
       primary: 'oklch(0.24 0.053 261.24)',
+      // secondary color
+      // used for post text
       secondary: 'oklch(0.39 0.053 261.24)',
+      // background color
       background: 'oklch(1 0 0)',
+      // highlight color
+      // used for navbar, selected text, etc
       highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)',
     },
     dark: {
+      // primary color
       primary: 'oklch(0.92 0 0)',
+      // secondary color
       secondary: 'oklch(0.79 0 0)',
+      // background color
       background: 'oklch(0.24 0.016 265.21)',
+      // highlight color
       highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)',
     },
   },
@@ -70,27 +58,27 @@ export const themeConfig: ThemeConfig = {
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   global: {
     // default language
-    locale: 'zh', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
+    locale: 'zh', // de | en | es | fr | ja | ko | pl | pt | ru | zh | zh-tw
     // more languages
     // not fill in the locale code above again, can be an empty array []
     moreLocales: ['en'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
-    // font styles for post text
-    fontStyle: 'sans', // sans, serif
-    // date format for posts
-    dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-    // table of contents for posts
-    toc: true, // true, false
-    // KaTeX math rendering
-    katex: true, // true, false
+    // post font style
+    fontStyle: 'sans', // sans | serif
+    // post date format
+    dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD | MM-DD-YYYY | DD-MM-YYYY | MMM D YYYY | D MMM YYYY
+    // enable table of contents
+    toc: true, // true | false
+    // enable katex math rendering
+    katex: true, // true | false
     // reduce motion
-    reduceMotion: false, // true, false
+    reduceMotion: false, // true | false
   },
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
   // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   comment: {
     // enable comment system
-    enabled: true, // true, false
+    enabled: true, // true | false
     // giscus
     // https://giscus.app/
     giscus: {
@@ -202,15 +190,15 @@ export const themeConfig: ThemeConfig = {
   // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   preload: {
     // image hosting url
-    // optimize remote images in Markdown files to avoid cumulative layout shift
+    // optimize remote images and generate low-quality placeholders
     imageHostURL: 'https://ydysd.top/wp-content/uploads/PicList/',
     // custom google analytics js
-    // for users who route analytics javascript to a customized domain
+    // for users who proxy tracking scripts to a custom domain
     // see https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
     customGoogleAnalyticsJS: '',
     // custom umami analytics js
-    // for users who deploy umami on their own, or route analytics javascript to a customized domain
-    // see https://github.com/umami-software/umami/discussions/1026
+    // for users who self-deploy umami or proxy tracking scripts to a custom domain
+    // see https://umami.is/docs/bypass-ad-blockers
     customUmamiAnalyticsJS: '',
   },
   // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END

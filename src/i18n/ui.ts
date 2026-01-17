@@ -10,7 +10,7 @@ interface Translation {
   toc: string
 }
 
-export const ui: Partial<Record<Language, Translation>> = {
+export const ui: Record<Language, Translation> = {
   en: {
     title: 'CodeRiff',
     subtitle: '@Coconut Jelly\'s Personal Blog',
