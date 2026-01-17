@@ -7,6 +7,10 @@ export const GET: APIRoute = ({ site }) => {
   const robotsTxt = [
     'User-agent: *',
     'Allow: /',
+    `Disallow: ${base}/_astro/`,
+    `Disallow: ${base}/feeds/`,
+    `Disallow: ${base}/giscus/`,
+    `Disallow: ${base}/og/`,
     `Disallow: ${base}/~partytown/`,
     '',
     `Sitemap: ${sitemapURL.href}`,
