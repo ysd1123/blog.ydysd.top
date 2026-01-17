@@ -7,7 +7,7 @@ tags:
   - WSL
   - VS Code
   - Python
-  - C/C++
+  - C&C++
 
 draft: false
 pin: 0
@@ -110,7 +110,7 @@ The item with an asterisk `*` is the default distro. You can change it with `wsl
 
 ```powershell
 PS C:\WINDOWS\system32> wsl ~ -d Ubuntu-24.04
-<YourUsername>@<YourMachineName>:~$ 
+<YourUsername>@<YourMachineName>:~$
 ```
 
 If you don't specify the initial directory `~`, you'll land in the Windows terminal's current directory, e.g., `/mnt/c/Users/david`.
@@ -180,7 +180,7 @@ Use `nvidia-smi` or `nvcc` to check whether your NVIDIA GPU is visible inside WS
 
 ```bash
 (base) ysd1123@YSD-ThinkBook:~$ nvidia-smi
-Wed Jul  2 23:09:16 2025       
+Wed Jul  2 23:09:16 2025
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 575.51.02              Driver Version: 576.02         CUDA Version: 12.9     |
 |-----------------------------------------+------------------------+----------------------+
@@ -192,7 +192,7 @@ Wed Jul  2 23:09:16 2025
 | N/A   34C    P8              2W /  115W |     265MiB /   8188MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
-                                                                                         
+
 +-----------------------------------------------------------------------------------------+
 | Processes:                                                                              |
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
@@ -270,15 +270,15 @@ I also recommend the [Code Runner](https://marketplace.visualstudio.com/items?it
 
 ```json
 {
-    "code-runner.runInTerminal": true,
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.fileDirectoryAsCwd": true,
-    "code-runner.executorMap": {
-        "c": "gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "g++ $fileName -o build/$fileNameWithoutExt && $dir/build/$fileNameWithoutExt"
-    },
-    "code-runner.preserveFocus": false,
-    "code-runner.saveFileBeforeRun": true
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  "code-runner.executorMap": {
+    "c": "gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "g++ $fileName -o build/$fileNameWithoutExt && $dir/build/$fileNameWithoutExt"
+  },
+  "code-runner.preserveFocus": false,
+  "code-runner.saveFileBeforeRun": true
 }
 ```
 

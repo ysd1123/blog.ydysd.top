@@ -7,7 +7,7 @@ tags:
   - WSL
   - VS Code
   - Python
-  - C/C++
+  - C&C++
 
 draft: false
 pin: 0
@@ -106,7 +106,7 @@ PS C:\WINDOWS\system32> wsl -l -v
 
 ```powershell
 PS C:\WINDOWS\system32> wsl ~ -d Ubuntu-24.04
-<YourUsername>@<YourMachineName>:~$ 
+<YourUsername>@<YourMachineName>:~$
 ```
 
 如果你不指定初始目录 `~`，那么你在登录发行版后会在 Windows 终端所在的目录下，例如 `/mnt/c/Users/david`。
@@ -176,7 +176,7 @@ Python 3.13.5
 
 ```bash
 (base) ysd1123@YSD-ThinkBook:~$ nvidia-smi
-Wed Jul  2 23:09:16 2025       
+Wed Jul  2 23:09:16 2025
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 575.51.02              Driver Version: 576.02         CUDA Version: 12.9     |
 |-----------------------------------------+------------------------+----------------------+
@@ -188,7 +188,7 @@ Wed Jul  2 23:09:16 2025
 | N/A   34C    P8              2W /  115W |     265MiB /   8188MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
-                                                                                         
+
 +-----------------------------------------------------------------------------------------+
 | Processes:                                                                              |
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
@@ -266,15 +266,15 @@ int main()
 
 ```json
 {
-    "code-runner.runInTerminal": true,
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.fileDirectoryAsCwd": true,
-    "code-runner.executorMap": {
-        "c": "gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "g++ $fileName -o build/$fileNameWithoutExt && $dir/build/$fileNameWithoutExt",
-    },
-    "code-runner.preserveFocus": false,
-    "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  "code-runner.executorMap": {
+    "c": "gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "g++ $fileName -o build/$fileNameWithoutExt && $dir/build/$fileNameWithoutExt"
+  },
+  "code-runner.preserveFocus": false,
+  "code-runner.saveFileBeforeRun": true
 }
 ```
 
