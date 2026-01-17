@@ -111,8 +111,8 @@ importers:
         specifier: 66.5.9
         version: 66.5.9(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/preset-attributify':
-        specifier: 66.5.9
-        version: 66.5.9
+        specifier: 66.6.0
+        version: 66.6.0
       '@unocss/reset':
         specifier: 66.5.9
         version: 66.5.9
@@ -151,7 +151,7 @@ importers:
         version: 66.5.9(postcss@8.5.6)(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))
       unocss-preset-theme:
         specifier: ^0.14.1
-        version: 0.14.1(@unocss/core@66.5.9)
+        version: 0.14.1(@unocss/core@66.6.0)
 
 packages:
 
@@ -1504,6 +1504,9 @@ packages:
   '@unocss/core@66.5.9':
     resolution: {integrity: sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A==}
 
+  '@unocss/core@66.6.0':
+    resolution: {integrity: sha512-Sxm7HmhsPIIzxbPnWembPyobuCeA5j9KxL+jIOW2c+kZiTFjHeju7vuVWX9jmAMMC+UyDuuCQ4yE+kBo3Y7SWQ==}
+
   '@unocss/eslint-plugin@66.5.9':
     resolution: {integrity: sha512-BtZtpHlGw50AH+8tMMHCOJuTFxd6BUBVWt3MQJBQYk+ANloHoq8cKCcOi6QZTvVivqtkxHBE8jT+t4Wro2LdEw==}
     engines: {node: '>=14'}
@@ -1522,6 +1525,9 @@ packages:
 
   '@unocss/preset-attributify@66.5.9':
     resolution: {integrity: sha512-PHmN+d32443WIV6rCksTHuO+19susHQrpiOddS6QiYN9LLTvJ8CAmdJYNmQUIOhlZsDhV7EjGZM9idUNK8C7ZA==}
+
+  '@unocss/preset-attributify@66.6.0':
+    resolution: {integrity: sha512-IfGZT9LjQkfpJaVjDtFMxOlrEoj7m1DCztRdby0FaptXChE7vdgRkYFl8HDeXMkEIlzV1YTHuIarwJ+tV+1SRQ==}
 
   '@unocss/preset-icons@66.5.9':
     resolution: {integrity: sha512-06or+pt1Q59k0Y8T/jOVhIHdkL7BChGmEnSsBk0e96ery32VpmPKrjCIWvwTEFDFf6H6K+1YmOUm+NujewovkA==}
@@ -5868,6 +5874,8 @@ snapshots:
 
   '@unocss/core@66.5.9': {}
 
+  '@unocss/core@66.6.0': {}
+
   '@unocss/eslint-plugin@66.5.9(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/utils': 8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -5906,6 +5914,10 @@ snapshots:
   '@unocss/preset-attributify@66.5.9':
     dependencies:
       '@unocss/core': 66.5.9
+
+  '@unocss/preset-attributify@66.6.0':
+    dependencies:
+      '@unocss/core': 66.6.0
 
   '@unocss/preset-icons@66.5.9':
     dependencies:
@@ -5964,7 +5976,7 @@ snapshots:
 
   '@unocss/rule-utils@66.5.9':
     dependencies:
-      '@unocss/core': 66.5.9
+      '@unocss/core': 66.6.0
       magic-string: 0.30.21
 
   '@unocss/transformer-attributify-jsx@66.5.9':
@@ -9481,9 +9493,9 @@ snapshots:
       unist-util-is: 6.0.0
       unist-util-visit-parents: 6.0.1
 
-  unocss-preset-theme@0.14.1(@unocss/core@66.5.9):
+  unocss-preset-theme@0.14.1(@unocss/core@66.6.0):
     dependencies:
-      '@unocss/core': 66.5.9
+      '@unocss/core': 66.6.0
       '@unocss/rule-utils': 0.63.6
 
   unocss@66.5.9(postcss@8.5.6)(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)):
