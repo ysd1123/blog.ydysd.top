@@ -1,11 +1,6 @@
-import type { CollectionEntry } from 'astro:content'
-import type { Language } from '@/i18n/config'
+import type { supportedLangs } from '@/i18n/config'
 
-export type Post = CollectionEntry<'posts'> & {
-  remarkPluginFrontmatter: {
-    minutes: number
-  }
-}
+type Exclude<T, U> = T extends U ? never : T
 
 export interface ThemeConfig {
   site: {
@@ -34,10 +29,10 @@ export interface ThemeConfig {
     }
   }
   global: {
-    locale: Language
-    moreLocales: Language[]
+    locale: typeof supportedLangs[number]
+    moreLocales: typeof supportedLangs[number][]
     fontStyle: 'sans' | 'serif'
-    dateFormat: 'YYYY-MM-DD' | 'MM-DD-YYYY' | 'DD-MM-YYYY' | 'MMM D YYYY' | 'D MMM YYYY'
+    dateFormat: 'YYYY-MM-DD' | 'MM-DD-YYYY' | 'DD-MM-YYYY' | 'MONTH DAY YYYY' | 'DAY MONTH YYYY'
     toc: boolean
     katex: boolean
     reduceMotion: boolean
@@ -94,3 +89,5 @@ export interface ThemeConfig {
     customUmamiAnalyticsJS?: string
   }
 }
+
+export default ThemeConfig
