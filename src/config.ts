@@ -87,7 +87,7 @@ export const themeConfig: ThemeConfig = {
       category: 'giscus',
       categoryId: 'DIC_kwDOPgGyaM4CuW2h',
       mapping: 'pathname',
-      strict: '1',
+      strict: '0',
       reactionsEnabled: '1',
       emitMetadata: '0',
       inputPosition: 'top',
