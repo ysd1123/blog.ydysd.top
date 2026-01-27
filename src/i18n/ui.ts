@@ -22,7 +22,7 @@ export const ui: Record<Language, Translation> = {
   },
   zh: {
     title: '码上观澜',
-    subtitle: '椰冻的个人博客',
+    subtitle: '椰冻的个人技术笔记',
     description: 'David Ye 的个人技术博客，也许也会有一些生活随笔。本站由 Astro 主题 Retypeset 和 GitHub Pages 强力驱动。',
     posts: '文章',
     tags: '标签',
