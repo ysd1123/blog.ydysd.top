@@ -6,7 +6,7 @@ export const themeConfig: ThemeConfig = {
     // site title
     title: '码上观澜',
     // site subtitle
-    subtitle: '椰冻的个人博客',
+    subtitle: '椰冻的个人技术笔记 | @Coconut Jelly',
     // site description
     description: 'David Ye 的个人技术博客，也许也会有一些生活随笔。本站由 Astro 主题 Retypeset 和 GitHub Pages 强力驱动。',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
@@ -173,17 +173,13 @@ export const themeConfig: ThemeConfig = {
         name: 'Email',
         url: 'davidye1123@outlook.com',
       },
-      {
-        name: 'WordPress',
-        url: 'https://ydysd.top',
-      }
       // {
       //   name: 'X',
       //   url: 'https://x.com/radishzz_',
       // },
     ],
     // year of website start
-    startYear: 2025,
+    startYear: 2020,
   },
   // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
