@@ -48,7 +48,7 @@ abbrlink: 'how-to-use-katex-on-wordpress'
 
 根据插件页面的介绍，我们可以知道可以在文章中插入 `[latex]` 短代码，即可显示公式。
 
-<img src="hhttp://qiniu.pic.ydysd.top/img/2020/2020_how-to-use-katex-on-wordpress_1.jpg" alt="WP-KaTeX 插件在 WordPress 插件库的界面" style="zoom:50%;" />
+<img src="http://qiniu.pic.ydysd.top/img/2020/2020_how-to-use-katex-on-wordpress_1.jpg" alt="WP-KaTeX 插件在 WordPress 插件库的界面" style="zoom:50%;" />
 
 ### 短代码属性
 
