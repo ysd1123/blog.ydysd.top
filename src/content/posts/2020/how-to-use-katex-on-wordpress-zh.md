@@ -48,7 +48,7 @@ abbrlink: 'how-to-use-katex-on-wordpress'
 
 根据插件页面的介绍，我们可以知道可以在文章中插入 `[latex]` 短代码，即可显示公式。
 
-<img src="https://pic.ydysd.top/i/u/2026/01/26/2020_how-to-use-katex-on-wordpress_1.jpg" alt="WP-KaTeX 插件在 WordPress 插件库的界面" style="zoom:50%;" />
+<img src="hhttp://qiniu.pic.ydysd.top/img/2020/2020_how-to-use-katex-on-wordpress_1.jpg" alt="WP-KaTeX 插件在 WordPress 插件库的界面" style="zoom:50%;" />
 
 ### 短代码属性
 
@@ -60,7 +60,7 @@ abbrlink: 'how-to-use-katex-on-wordpress'
 
 这款插件的短代码用了 `[latex]`，如果要改成`[katex]`，可以参考插件评论中 WordPress 用户 [giannit](https://profiles.wordpress.org/giannit) 的评论：
 
-<img src="https://pic.ydysd.top/i/u/2026/01/26/2020_how-to-use-katex-on-wordpress_2.jpg" alt="WordPress 用户 giannit 的评论截图" style="zoom:50%;" />
+<img src="http://qiniu.pic.ydysd.top/img/2020/2020_how-to-use-katex-on-wordpress_2.jpg" alt="WordPress 用户 giannit 的评论截图" style="zoom:50%;" />
 
 >  在 `wp-content\plugins\wp-katex\scripts\frontend.php` 在第 41 行编辑文件，更改`add_shortcode( 'latex', 'katex_handler' );`为`add_shortcode( 'katex', 'katex_handler' );`即可。
 >

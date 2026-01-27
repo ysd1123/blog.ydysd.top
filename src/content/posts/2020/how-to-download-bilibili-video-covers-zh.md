@@ -16,11 +16,11 @@ abbrlink: 'how-to-download-bilibili-video-covers'
 
 在Bilibili视频页面，使用开发者工具，可以看到Bilibili的api服务器（`api.bilibili.com`）。
 
-*示例：视频av19390801中使用开发者工具查看*
+![示例：视频av19390801中使用开发者工具查看](http://qiniu.pic.ydysd.top/img/2020/2020_how-to-download-bilibili-video-covers_1.jpg)
 
 通过英文翻译粗略判断各个api的用途，然后再在Network选项卡中，一个个过滤慢慢找，找到那个可以返回所有视频基本信息的api。
 
-*找到这个能返回视频封面的api*
+![找到这个能返回视频封面的api](http://qiniu.pic.ydysd.top/img/2020/2020_how-to-download-bilibili-video-covers_2.jpg)
 
 好了，这样就找到了这个能返回视频封面的api了。api地址：https://api.bilibili.com/x/web-interface/view
 
@@ -38,6 +38,8 @@ abbrlink: 'how-to-download-bilibili-video-covers'
 ```
 
 格式化一下：
+
+![格式化的 JSON](http://qiniu.pic.ydysd.top/img/2020/2020_how-to-download-bilibili-video-covers_3.jpg)
 
 嗯，`json.data.pic`里的字符串就是封面图像url啦。
 
