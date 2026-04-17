@@ -142,9 +142,9 @@ export const themeConfig: ThemeConfig = {
     // umami analytics
     // https://cloud.umami.is
     umamiAnalyticsID: '',
-    // follow verification
+    // folo verification
     // https://follow.is/
-    follow: {
+    folo: {
       // feed ID
       feedID: '',
       // user ID
