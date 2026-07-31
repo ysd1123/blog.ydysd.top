@@ -40,7 +40,7 @@ export const themeConfig: ThemeConfig = {
       background: 'oklch(1 0 0)',
       // highlight color
       // used for navbar, selected text, etc
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)',
+      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
     },
     dark: {
       // primary color
@@ -50,7 +50,7 @@ export const themeConfig: ThemeConfig = {
       // background color
       background: 'oklch(0.24 0.016 265.21)',
       // highlight color
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)',
+      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
@@ -143,7 +143,7 @@ export const themeConfig: ThemeConfig = {
     // https://cloud.umami.is
     umamiAnalyticsID: '',
     // folo verification
-    // https://follow.is/
+    // https://folo.is/
     folo: {
       // feed ID
       feedID: '',
